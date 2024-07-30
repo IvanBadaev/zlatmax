@@ -2,6 +2,8 @@ const path = require('path');
 const express = require('express');
 const app = express();
 
+app.set('views', path.join(__dirname, '/views'));
+app.set('view engine', 'ejs');
 const appDir = path.dirname(require.main.filename);
 
 app.use(express.static(path.join(__dirname, '/public')));
@@ -9,18 +11,18 @@ app.use(express.static(path.join(__dirname, '/public')));
 
 
 app.use('/account', (req, res) => {
-    res.sendFile(path.join(__dirname, '/pages/account.html'));
+    res.render('account');
 });
 
 
 
 app.use('/', (req, res) => {
     if (req.originalUrl === '/') {
-        res.sendFile(path.join(__dirname, '/pages/home.html'));
+        res.render('home');
     } else {
         res.status(404);
         res.send(`Error : requested ${req.path}, but got nothing on ${path.join(appDir, req.path)}`);
-        // res.sendFile(path.join(__dirname, 'pages/404.html'));
+        // res.render('404');
     }
 });
 

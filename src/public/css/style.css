@@ -16,7 +16,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: #e5e7eb;
+  border-color: currentColor;
   /* 2 */
 }
 
@@ -554,20 +554,13 @@ video {
   --tw-contain-style:  ;
 }
 
-.flex {
-  display: flex;
+body {
+  font-family : 'Montserrat';
+  font-style : normal;
 }
 
-.bg-black {
-  background-color: rgba(20, 20, 20, 1);
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+.non-tw-container {
+  max-width : 1200px;
+  padding-inline : 40px;
+  margin : auto;
 }
