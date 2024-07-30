@@ -3,25 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ditnails</title>
 </head>
 <link rel="stylesheet" href="/css/style.css">
 <link rel="stylesheet" href="/css/fonts.css">
 <body>
   <img src="/images/knife.jpg" alt="knife">
-  <header>
+  <header class="flex bg-black p-25">
     <nav>
-      <ul>
-        <li class="text-sm">О нас</li>
-        <li class="text-2xl">Оплата и доставка</li>
-        <li>Новости</li>
-        <li>Контакты</li>
+      <img src="/images/logo.png" alt="logo">
+      <ul class="flex justify-between">
+        <li class="text-sm"><a href="/catalogue">Каталог</a></li>
+        <li class="text-2xl p-35"><a href="/partners">Бренды</a></li>
+        <li><a href="/palette">Палитра</a></li>
+        <li><a href="/partners">Магазины</a></li>
+        <li><a href="/discounts">Акции</a></li>
       </ul>
     </nav>
-    <a href="/login">
-      <img src="/images/profile" alt="profile-icon">
-      <p>Личный кабинет</p>
-    </a>
+    <nav>
+      <a href="/search"><img src="/images/icons/looking-glass.svg" alt="search"></a>
+      <a href="/profile"><img src="/images/icons/profile.svg" alt="profile-page"></a>
+      <a href="/profile/favourites"><img src="/images/icons/heart.svg" alt="favourites"></a>
+      <a href="/profile/order"><img src="/images/icons/shopping-bag.svg" alt="my-purchases"></a>
+    </nav>
   </header>
 </body>
 </html>
